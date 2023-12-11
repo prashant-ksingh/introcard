@@ -1,140 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Portfolio Card</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Add Font Awesome CSS for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <style>
-        .card {
-            margin: 0 auto;
-            max-width: 350px; /* Adjust the max-width to make the card slightly wider */
-            border-radius: 20px; /* Rounded corners */
-            text-align: center;
-            padding: 20px; /* Add padding to the card */
-            
-        }
+      .card {
+        margin: 0 auto;
+        max-width: 350px; /* Adjust the max-width to make the card slightly wider */
+        border-radius: 20px; /* Rounded corners */
+        text-align: center;
+        /* padding: 20px; Add padding to the card */
+      }
 
-        .card-img-top {
-            border-radius: 50%;
-            /* max-width: 200px; Adjust the max-width to make the image slightly bigger */
-            height: 170px;
-            width:170px;
-            margin: auto;
-            /* margin: 0 auto; Center align the image horizontally */
-        }
+      .card-img-top {
+        border-radius: 50%;
+        /* max-width: 200px; Adjust the max-width to make the image slightly bigger */
+        height: 150px;
+        width: 150px;
+        margin: auto;
+        /* margin: 0 auto; Center align the image horizontally */
+      }
 
-        .key-skills {
-            text-align: left;
-            margin-top: 20px; /* Add some space between the summary and key skills */
-        }
+      .key-skills {
+        text-align: left;
+        /* margin-top: 6px; Add some space between the summary and key skills */
+      }
 
-        .key-skills ul {
-            list-style: none;
-            padding: 0;
-        }
+      .key-skills ul {
+        list-style: none;
+        padding: 0;
+      }
 
-        .key-skills ul li {
-            display: inline;
-            margin-right: 10px;
-        }
+      .key-skills ul li {
+        display: inline;
+        margin-right: 10px;
+      }
 
-        .social-icons i {
-            font-size: 24px; /* Increase the size of social icons */
-        }
+      .social-icons i {
+        font-size: 24px; /* Increase the size of social icons */
+      }
 
-        .container-bg {
-            background-color: #f0f0f0; /* Light gray background */
-            padding: 20px;
-            height: 100%;
-            align-item: center;
-            background-image: url('https://c0.wallpaperflare.com/preview/997/717/184/artificial-intelligence-codes-developing-screen.jpg');
-            position: relative; /* Create a relative positioning context for the icons */
-            background-attachment: fixed;
-        }
+      .container-bg {
+        background-color: #f0f0f0; /* Light gray background */
+        padding: 20px;
+        height: 100vh;
+        background-image: url("https://c0.wallpaperflare.com/preview/997/717/184/artificial-intelligence-codes-developing-screen.jpg");
+        position: relative; /* Create a relative positioning context for the icons */
+        background-attachment: fixed;
+      }
 
-        .background-icons {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            background-repeat: repeat;
-        }
+      .background-icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-repeat: repeat;
+      }
     </style>
-</head>
-<body>
-    <div class="container-bg" style="background-size: cover;">
-        <div class="container mt-5">
-            <div class="card col-auto mb-3 justify-content-center d-flex">
-                <img src="https://avatars.githubusercontent.com/u/71728779?v=4" class="card-img-top" alt="Your Name">
-                <div class="card-body">
-                    <h5 class="card-title">Prashant K Singh</h5>
-                    <p class="card-text">A passionate software developer and Robo Enthusiast from INDIA </p>
-                    <div class="key-skills">
-                        <h6>Key Skills:</h6>
-                        <div class="container my-2">
-                            <div class="row">
-                              <div class="col-sm bg-light border border-dark text-center" style="padding: 4px; margin:4px; border-radius:20px;">
-                                Python
-                              </div>
-                              <div class="col-sm bg-light border border-dark  text-center" style="padding: 4px; margin:4px;  border-radius:20px;">
-                                C++
-                              </div>
-                              <div class="col-sm bg-light border border-dark  text-center" style="padding: 4px; margin:4px;  border-radius:20px;">
-                                Django
-                              </div>
-                              <div class="col-sm bg-light border border-dark  text-center" style="padding: 4px; margin:4px;  border-radius:20px;">
-                                Bootstrap
-                              </div>
-                              <div class="col-sm bg-light border border-dark  text-center" style="padding: 4px; margin:4px;  border-radius:20px;">
-                                Arduino
-                              </div>
-                              <div class="col-sm bg-light border border-dark  text-center" style="padding: 4px; margin:4px;  border-radius:20px;">
-                                AWS_Lambda
-                              </div>
-                            </div>
-                          </div>
-                        <!-- <ul>
+  </head>
+  <body>
+    <div class="container-bg" style="background-size: cover">
+      <div class="container py-2">
+        <div class="card col-auto mb-3 justify-content-center d-flex">
+          <img
+            src="https://avatars.githubusercontent.com/u/71728779?v=4"
+            class="card-img-top"
+            alt="Your Name"
+          />
+          <div class="card-body py-2">
+            <h5 class="card-title">Prashant K Singh</h5>
+            <p class="card-text">
+              A passionate software developer and Robo Enthusiast from INDIA
+            </p>
+            <div class="key-skills">
+              <h6>Key Skills:</h6>
+              <div class="container my-2">
+                <div class="row">
+                  <div
+                    class="col-sm bg-light border border-dark text-center"
+                    style="padding: 4px; margin: 4px; border-radius: 20px"
+                  >
+                    Python
+                  </div>
+                  <div
+                    class="col-sm bg-light border border-dark text-center"
+                    style="padding: 4px; margin: 4px; border-radius: 20px"
+                  >
+                    C++
+                  </div>
+                  <div
+                    class="col-sm bg-light border border-dark text-center"
+                    style="padding: 4px; margin: 4px; border-radius: 20px"
+                  >
+                    Django
+                  </div>
+                  <div
+                    class="col-sm bg-light border border-dark text-center"
+                    style="padding: 4px; margin: 4px; border-radius: 20px"
+                  >
+                    Bootstrap
+                  </div>
+                  <div
+                    class="col-sm bg-light border border-dark text-center"
+                    style="padding: 4px; margin: 4px; border-radius: 20px"
+                  >
+                    Arduino
+                  </div>
+                  <div
+                    class="col-sm bg-light border border-dark text-center"
+                    style="padding: 4px; margin: 4px; border-radius: 20px"
+                  >
+                    AWS_Lambda
+                  </div>
+                </div>
+              </div>
+              <!-- <ul>
                             <li>Python</li>
                             <li>C++</li>
                             <li>Django</li>
                             <li>AWS Lambda</li>
                         </ul> -->
-                    </div>
-                    <a href="https://www.your-portfolio-website.com" class="btn btn-primary">Portfolio</a>
-                    <a href="https://drive.google.com/file/d/1R6tQ0XTD6yUjZDOShvVY5kxdoqUNzN8y/view?usp=drivesdk" class="btn btn-success">Resume</a>
-                </div>
-                <div class="card-footer">
-                    <ul class="list-inline social-icons">
-                        <li class="list-inline-item">
-                            <a href="mailto:prashantkumarsingh934@gmail.com" target="_blank" >
-                                <i class="far fa-envelope text-secondary"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://github.com/prashant-ksingh" target="_blank">
-                                <i class="fab fa-github text-dark"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/prashantksingh934" target="_blank">
-                                <i class="fab fa-linkedin text-primary"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div class="background-icons"></div>
+            <a
+              href="https://www.your-portfolio-website.com"
+              class="btn btn-primary"
+              >Portfolio</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1R6tQ0XTD6yUjZDOShvVY5kxdoqUNzN8y/view?usp=drivesdk"
+              class="btn btn-success"
+              >Resume</a
+            >
+          </div>
+          <div class="card-footer">
+            <ul class="list-inline social-icons m-0">
+              <li class="list-inline-item">
+                <a
+                  href="mailto:prashantkumarsingh934@gmail.com"
+                  target="_blank"
+                >
+                  <i class="far fa-envelope text-secondary"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/prashant-ksingh" target="_blank">
+                  <i class="fab fa-github text-dark"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/prashantksingh934"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin text-primary"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="background-icons"></div>
+      </div>
     </div>
 
     <!-- Bootstrap JS and Popper.js (Optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
